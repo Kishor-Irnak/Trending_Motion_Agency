@@ -37,10 +37,9 @@
 <!-- SCREENSHOTS -->
 ## 📸 Preview
 
-> **Note:** *Replace this section with actual screenshots of your application.*
 
 <div align="center">
-  <img src="https://placehold.co/1200x600/05050A/7C3AED?text=Agency+Landing+Page+Preview" alt="Project Screenshot" width="100%">
+  <img src="https://i.postimg.cc/Kv44XWrD/1.png" alt="Project Screenshot" width="100%">
 </div>
 
 <br />
