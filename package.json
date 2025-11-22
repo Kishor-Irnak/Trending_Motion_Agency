@@ -2,7 +2,6 @@
   "name": "trending-motion",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://kishor-irnak.github.io/Trending_Motion_Agency/",
   "type": "module",
   "scripts": {
     "dev": "vite",
