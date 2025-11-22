@@ -37,7 +37,6 @@
 <!-- SCREENSHOTS -->
 ## 📸 Preview
 
-> **Note:** *Replace this section with actual screenshots of your application.*
 
 <div align="center">
   <img src="https://i.postimg.cc/Kv44XWrD/1.png" alt="Project Screenshot" width="100%">
