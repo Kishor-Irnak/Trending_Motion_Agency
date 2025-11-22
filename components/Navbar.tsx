@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -9,31 +9,37 @@ const Navbar: React.FC = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'Services', href: '#features' },
-    { name: 'Process', href: '#process' },
-    { name: 'Pricing', href: '#pricing' },
+    { name: "Home", href: "#" },
+    { name: "Services", href: "#features" },
+    { name: "Process", href: "#process" },
+    { name: "Pricing", href: "#pricing" },
   ];
 
   return (
-    <nav 
+    <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || isOpen ? 'bg-[#05050A]/80 backdrop-blur-md border-b border-white/5' : 'bg-transparent border-transparent'
+        scrolled || isOpen
+          ? "bg-[#05050A]/80 backdrop-blur-md border-b border-white/5"
+          : "bg-transparent border-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center">
-              <span className="text-white font-bold text-xl">T</span>
-            </div>
-            <span className="font-semibold text-xl tracking-tight text-white">TrendingMotion</span>
+            <img
+              src="https://i.postimg.cc/GhWnSTSq/favicon.png"
+              alt="TrendingMotion Logo"
+              className="w-8 h-8 object-contain"
+            />
+            <span className="font-semibold text-xl tracking-tight text-white">
+              TrendingMotion
+            </span>
           </div>
 
           {/* Desktop Nav */}
